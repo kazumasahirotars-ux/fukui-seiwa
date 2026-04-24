@@ -472,23 +472,26 @@ footer {
 }
 
 @media (max-width: 768px) {
-   .hero {
-    height: auto;
+  .hero {
+    height: 60vh;
     padding: 0;
+    overflow: hidden;
   }
 
   .hero-slider {
-    position: relative;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
   }
 
   .hero-slider .slide {
-    position: relative;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
   }
 
   .hero-slider .slide:first-child {

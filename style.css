@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
@@ -6,6 +14,10 @@ body {
   background-color: #f7f7f7;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 .site-header {
   background-color: white;
   border-bottom: 1px solid #e5e5e5;

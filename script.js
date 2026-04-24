@@ -9,3 +9,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 fadeElements.forEach((el) => observer.observe(el));
+
+const heroTrack = document.querySelector(".hero-slider-track");
+let currentSlide = 0;
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % 2;
+  heroTrack.style.transform = `translateX(-${currentSlide * 50}%)`;
+}, 4000);

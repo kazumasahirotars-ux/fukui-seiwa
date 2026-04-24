@@ -18,10 +18,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .site-header {
   background-color: white;
   border-bottom: 1px solid #e5e5e5;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 16px 24px;
   position: sticky;
   top: 0;
@@ -227,7 +228,7 @@ main {
 .section {
   background-color: white;
   margin-bottom: 24px;
-   padding: 32px;
+  padding: 32px;
   border-radius: 12px;
 }
 
@@ -249,7 +250,7 @@ h2 {
   flex: 1;
   min-width: 220px;
   background-color: #f0f7f5;
-   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 16px;
   border-radius: 10px;
 }
@@ -522,6 +523,10 @@ footer {
     display: block;
   }
 
+ .hero-slider .slide:nth-child(1) img {
+    object-position: center 35%;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -587,6 +592,7 @@ footer {
     flex-direction: column;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     padding: 0;
@@ -607,7 +613,9 @@ footer {
     object-position: center 50%;
   }
 }
+
 @media (max-width: 768px) {
+
   .contact-card,
   .map-card {
     width: 100%;

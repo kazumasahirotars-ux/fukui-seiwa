@@ -22,10 +22,16 @@
 
   <section class="hero">
     <div class="hero-slider">
-      <img src="images/main.jpg" alt="施設の外観" class="slide">
-      <img src="images/main2.jpg" alt="施設の外観" class="slide">
+      <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/main-sp.jpg">
+        <img src="images/main.jpg" alt="施設の外観">
+      </picture>
+
+      <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/main2-sp.jpg">
+        <img src="images/main2.jpg" alt="施設の外観">
+      </picture>
     </div>
-    <div class="hero-overlay"></div>
   </section>
 
   <main>

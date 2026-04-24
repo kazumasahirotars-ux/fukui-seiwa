@@ -101,10 +101,16 @@ img {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 65%;
   opacity: 0;
   animation: heroFade 10s infinite;
+}
+
+.hero-slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .hero-slider .slide:nth-child(1) {
@@ -469,6 +475,24 @@ footer {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.sp-image {
+  display: none;
+}
+
+.pc-image {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .pc-image {
+    display: none;
+  }
+
+  .sp-image {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {

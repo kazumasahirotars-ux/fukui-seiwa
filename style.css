@@ -116,7 +116,7 @@ img {
 
 .hero-slider .slide:nth-child(1) {
   animation-delay: 0s;
-  object-position: center 20%;
+  object-position: center 30%;
 }
 
 .hero-slider .slide:nth-child(2) {

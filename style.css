@@ -77,22 +77,7 @@ img {
   opacity: 0.85;
 }
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
 
-.hero-slider {
-  position: absolute;
-  inset: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-}
 
 .hero-slider .slide {
   position: absolute;
@@ -164,16 +149,6 @@ img {
   }
 }
 
-.vacancy {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #00695c;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 999px;
-  max-width: 320px;
-}
 
 h1 {
   font-size: 40px;
@@ -313,19 +288,6 @@ h2 {
   line-height: 1.8;
 }
 
-@media (max-width: 768px) {
-  .reason-item {
-    flex-direction: column;
-    gap: 12px;
-    padding: 20px;
-  }
-
-  .reason-number {
-    width: 46px;
-    height: 46px;
-    font-size: 18px;
-  }
-}
 
 .gallery {
   display: grid;
@@ -367,12 +329,6 @@ footer {
   background-color: #dfeeea;
 }
 
-.contact-tel {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 16px 0 8px;
-}
-
 .contact-tel a {
   color: #00695c;
   text-decoration: none;
@@ -382,11 +338,6 @@ footer {
   text-decoration: underline;
 }
 
-.contact-note {
-  margin-top: 16px;
-  font-size: 15px;
-  color: #666;
-}
 
 #contact {
   text-align: left;
@@ -479,14 +430,6 @@ footer {
   overflow: hidden;
 }
 
-.hero-slider .slide {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: heroFade 10s infinite;
-}
 
 .hero-slider .slide:nth-child(1) {
   animation-delay: 0s;
@@ -518,13 +461,6 @@ footer {
   pointer-events: none;
 }
 
-@keyframes heroFade {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  40% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; }
-}
 
 /* ==================================================
    mainビジュアル内の白文字
@@ -626,53 +562,7 @@ footer {
   color: #444;
 }
 
-/* ==================================================
-   mainビジュアル スマホ対応
-================================================== */
 
-@media (max-width: 768px) {
-  .hero {
-    height: 62vh;
-    min-height: 460px;
-  }
-
-  .hero-text {
-    left: 24px;
-    right: 24px;
-    top: 50%;
-    width: auto;
-    max-width: none;
-  }
-
-  .hero-label {
-    min-width: 0;
-    font-size: 13px;
-    padding: 7px 14px;
-    margin-bottom: 14px;
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-    line-height: 1.45;
-    margin-bottom: 18px;
-  }
-
-  .hero-copy {
-    font-size: 15px;
-    line-height: 1.8;
-  }
-
-  .hero-feature-cards {
-    width: 92%;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin: 24px auto 40px;
-  }
-
-  .hero-feature-card {
-    padding: 24px 18px;
-  }
-}
 
 /* ==================================================
    行事紹介
@@ -903,4 +793,212 @@ footer {
 
 .voice small {
   white-space: nowrap;
+}
+
+/* ===================================
+   スマホ用CSS まとめ
+=================================== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    padding: 14px 16px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .site-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-vacancy,
+  .header-button {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  main {
+    width: 100%;
+    padding: 28px 14px;
+  }
+
+  .section {
+    padding: 22px 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* トップ画像 */
+  .hero {
+    height: 70vh;
+    min-height: 420px;
+  }
+
+  .hero-text {
+    left: 50%;
+    top: 50%;
+    width: 86%;
+    max-width: none;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-label {
+    min-width: 0;
+    font-size: 13px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 27px;
+    line-height: 1.45;
+  }
+
+  .hero-copy {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .hero-feature-cards {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 24px auto 40px;
+  }
+
+  .hero-feature-card {
+    padding: 24px 18px;
+  }
+
+  /* 行事紹介 */
+  .events-section {
+    margin: 40px auto;
+    padding: 0 14px;
+  }
+
+  .events-heading h2 {
+    font-size: 30px;
+  }
+
+  .event-card-large,
+  .event-card-large.reverse {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .event-image {
+    order: -1;
+    width: 100%;
+  }
+
+  .event-image img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .event-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .event-tag {
+    width: fit-content;
+    font-size: 18px;
+    padding: 8px 18px;
+    margin-bottom: 14px;
+  }
+
+  .event-text p {
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .voice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .voice small {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* カード */
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .reason-item {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .reason-number {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+
+  /* ギャラリー */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 240px;
+  }
+
+  /* 問い合わせ */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 24px 18px;
+  }
+
+  .contact-tel {
+    font-size: 24px;
+  }
+
+  .map-card iframe {
+    min-height: 280px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 18px 12px;
+  }
 }

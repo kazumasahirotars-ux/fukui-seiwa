@@ -603,6 +603,73 @@ footer {
 
 
 /* ==================================================
+   施設紹介
+================================================== */
+
+
+
+.intro-section {
+  position: relative;
+  overflow: hidden;
+  background: #f4fbf8;
+  border-left: 8px solid #00695c;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  padding: 64px 56px;
+  min-height: 430px;
+}
+
+/* 建物 */
+.intro-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 52%;
+  height: 95%;
+
+  background-image: url("images/main2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  z-index: 2;
+  opacity: 0.9;
+
+  /* 左側と上側をふわっと消す */
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, black 28%),
+    linear-gradient(0deg, black 45%, transparent 85%);
+  -webkit-mask-composite: source-in;
+
+  mask-image:
+    linear-gradient(90deg, transparent 0%, black 28%),
+    linear-gradient(0deg, black 45%, transparent 85%);
+  mask-composite: intersect;
+}
+
+/* 葉っぱ */
+.intro-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/leaf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 文字 */
+.intro-text {
+  position: relative;
+  z-index: 3;
+  max-width: 330px;
+}
+
+/* ==================================================
    行事紹介
 ================================================== */
 

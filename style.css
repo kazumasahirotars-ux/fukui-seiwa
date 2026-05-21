@@ -669,6 +669,57 @@ footer {
   max-width: 330px;
 }
 
+/* ===================================
+   施設紹介 スマホ
+=================================== */
+
+@media (max-width:768px){
+
+.intro-section{
+
+    padding:40px 24px;
+    min-height:auto;
+
+    border-left:6px solid #00695c;
+}
+
+/* 葉っぱを弱める */
+.intro-section::before{
+
+    background-size:cover;
+    opacity:0.35;
+}
+
+/* 建物画像 */
+.intro-section::after{
+    display:none;
+}
+
+/* 文字 */
+.intro-text{
+
+    max-width:none;
+    z-index:3;
+}
+
+.intro-label{
+    font-size:13px;
+}
+
+.intro-section h2{
+
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.intro-section p{
+
+    font-size:16px;
+    line-height:1.9;
+}
+
+}
+
 /* ==================================================
    行事紹介
 ================================================== */

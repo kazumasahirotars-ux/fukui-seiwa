@@ -246,7 +246,7 @@ h1 {
 }
 
 main {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -721,6 +721,160 @@ footer {
 }
 
 /* ==================================================
+   こんな方におすすめ
+================================================== */
+
+.recommend-section {
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbf8 100%);
+}
+
+.section-label {
+  color: #00796b;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.recommend-lead {
+  margin: 0 auto 40px;
+  max-width: 720px;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.recommend-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.recommend-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 36px 24px;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 105, 92, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+.recommend-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #e0f2ed;
+  color: #00695c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.recommend-card h3 {
+  color: #00594f;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.recommend-card p {
+  color: #555;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* ==================================================
+   こんな方におすすめ：写真入りカード
+================================================== */
+
+.recommend-photo-section {
+  background: #fff;
+  padding: 70px 0;
+  width: min(92vw, 1400px);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.recommend-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.recommend-heading h2 {
+  color: #00594f;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.08em;
+}
+
+.recommend-heading p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-top: 18px;
+}
+
+.recommend-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #9bbf7a;
+}
+
+.recommend-decoration span {
+  width: 72px;
+  height: 1px;
+  background: #9bbf7a;
+}
+
+.recommend-decoration i {
+  font-size: 22px;
+}
+
+.recommend-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.recommend-photo-card {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  align-items: center;
+  background: #f7fbf7;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  min-height: 300px;
+}
+
+.recommend-photo-text {
+  padding: 38px 30px 38px 38px;
+}
+
+.recommend-photo-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  padding: 0 18px 0 0;
+}
+
+.recommend-photo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 22px;
+}
+/* ==================================================
    行事紹介
 ================================================== */
 
@@ -1156,5 +1310,81 @@ footer {
   footer {
     font-size: 14px;
     padding: 18px 12px;
+  }
+
+    /* こんな方におすすめ：スマホ */
+  .recommend-photo-section {
+    width: 100%;
+    padding: 44px 14px;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .recommend-heading {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .recommend-heading h2 {
+    font-size: 28px;
+    letter-spacing: 0.04em;
+  }
+
+  .recommend-heading p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 14px;
+  }
+
+  .recommend-decoration span {
+    width: 48px;
+  }
+
+  .recommend-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .recommend-photo-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    border-radius: 22px;
+  }
+
+  .recommend-photo-image {
+    order: -1;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    padding: 0;
+  }
+
+  .recommend-photo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .recommend-photo-text {
+    padding: 24px 22px 28px;
+  }
+
+  .recommend-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .recommend-photo-text h3 {
+    font-size: 22px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+
+  .recommend-photo-text p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 }

@@ -125,6 +125,23 @@ img {
   z-index: 1;
 }
 
+.site-main-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-copy-main {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.hero-copy {
+  font-size: 18px;
+}
+
 @keyframes heroFade {
   0% {
     opacity: 0;
@@ -503,22 +520,7 @@ footer {
 /* ==================================================
    mainビジュアル内の白文字
 ================================================== */
-.site-main-title {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #fff;
-}
 
-.hero-copy-main {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 12px;
-}
-
-.hero-copy {
-  font-size: 18px;
-}
 .hero-text {
   position: absolute;
   z-index: 3;

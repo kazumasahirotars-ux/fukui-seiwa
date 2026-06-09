@@ -503,7 +503,22 @@ footer {
 /* ==================================================
    mainビジュアル内の白文字
 ================================================== */
+.site-main-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+}
 
+.hero-copy-main {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.hero-copy {
+  font-size: 18px;
+}
 .hero-text {
   position: absolute;
   z-index: 3;
@@ -1064,6 +1079,44 @@ footer {
   border-radius: 2px;
 }
 
+/*ボランティア*/
+.event-volunteer {
+  background: #e8f5ef;
+  color: #00695c;
+}
+
+.volunteer-voice {
+  background: #eef8f3;
+}
+
+.volunteer-voice i {
+  color: #00695c;
+}
+
+.volunteer-card .event-text::after {
+  content: "♪ ♫";
+  position: absolute;
+  right: 24px;
+  bottom: 56px;
+  font-size: 30px;
+  opacity: 0.3;
+}
+/* ボランティア演奏会のポスター画像は切らずに見せる */
+.poster-card .event-image {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.poster-card .event-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px;
+}
 /* 利用者様の声：色を行事ごとに合わせる */
 .sakura-card .voice {
   background: #fff4f4;
